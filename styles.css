@@ -1,0 +1,149 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #eeeaeadd;
+}
+
+.nav {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    overflow: visible;
+}
+
+.nav > :first-child {
+    margin-right: auto;
+}
+
+.logo {
+    width: fit-content;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+    text-wrap: nowrap;
+    overflow: visible;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: #0a539c;
+    color: #ffffffdd;
+    padding-top: 10px;
+    min-height: 50px;
+    border-bottom: #ff0000 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header a:hover {
+    text-decoration: underline 5px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+    position: relative;
+    top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 10px 0 10px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#hero {
+    background: rgb(124, 177, 200);
+    min-height: 200px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#hero h1 {
+    margin: 0;
+    padding: 0 0 1px 0;
+    font-size: 5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    color: #fff;
+    background: #ff0000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+section {
+    padding: 20px 0;
+}
+
+hr {
+    width: 75%;
+}
+
+.criminal, .history-item {
+    margin-bottom: 20px;
+}
+
+#contact {
+    margin-left: 10%;
+}
+
+#contact:hover {
+    background: #de0101;
+}
+
+footer {
+    background: #004284;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1220px) {
+    .logo {
+        font-size: 15px;
+        margin-left: 10px;
+        padding: 0;
+    }
+    header li a {
+        font-size: 10px;
+    }
+    header {
+        padding: 0;
+    }
+    #hero h1 {
+        font-size: 3rem;
+    }
+    header li {
+        padding: 0 0 0 5px;
+    }
+    header ul {
+        top: 0;
+    }
+    .nav {
+        width: 95%;
+        flex-direction: column;
+    }
+}    
