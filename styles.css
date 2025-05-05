@@ -121,6 +121,16 @@ footer {
     margin-top: 20px;
 }
 
+.me {
+    text-decoration: none;
+    color: #eeeaeadd;
+}
+
+.me {
+    text-decoration: none;
+    color: #eeeaeadd;
+}
+
 @media screen and (max-width: 1220px) {
     .logo {
         font-size: 15px;
