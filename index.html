@@ -5,183 +5,269 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitcoin is for Criminals</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ringside+Compressed:wght@700&family=Ringside+Extra+Wide:wght@800&family=Ringside+Regular:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23182658' width='100' height='100'/><text y='.9em' x='50%' text-anchor='middle' font-size='80' fill='white'>₿</text></svg>">
 </head>
 <body>
     <header>
-        <div class="nav">
-            <h1 class="logo">BITCOIN IS FOR CRIMINALS</h1>
-            <nav>
-                <ul>
+        <div class="header-inner">
+            <a href="#" class="logo">BITCOIN IS FOR CRIMINALS</a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="main-nav">
+                <ul class="nav-list">
                     <li><a href="#about">About</a></li>
                     <li><a href="#criminals">Criminals</a></li>
                     <li><a href="#countries">Countries</a></li>
                     <li><a href="#history">History</a></li>
-                    <li><a href="#contact">Get Involved</a></li>
+                    <li><a href="#contact" class="donate-link">Get Involved</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="hero">
-        <div class="container">
-            <h1>BE ALERT</h1>
-            <p>The following case studies are real life examples of the ways criminals have used bitcoin across the globe.</p>
-            <p>As a warning, you may find some of the illicit activicy described below alarming.</p>
-            <p>Proceed with caution.</p>
-        </div>
-    </section>
+    <main>
+        <section id="hero">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <h1 class="hero-title">BE ALERT</h1>
+                <hr class="hero-divider">
+                <p class="hero-text">The following case studies are real life examples of the ways criminals have used bitcoin across the globe.</p>
+                <p class="hero-text">As a warning, you may find some of the illicit activicy described below alarming.</p>
+                <p class="hero-text">Proceed with caution.</p>
+            </div>
+        </section>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Bitcoin</h2>
-            <p>The Bitcoin network is the world's largest and most secure computer network. 100% of global Bitcoin node operators are unregulated. As a result, no single government, bank, or corporation can control it.</p>
-            <p>Furthermore, the network's native token, bitcoin, is entirely permissionless. It is impossible to stop criminals from using it because of the aformentioned decentralized network. While most "bitcoiners" use this native token as an alternative money, due to its limited supply and savings value, many use it for illicit purposes.</p>
-            <p>We are hard at work highlighting high profile, international cases so the public is aware of the many ways criminals use this network.</p>
-        </div>
-    </section>
+        <section id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">OVERVIEW</span>
+                    <h2 class="section-title">About Bitcoin</h2>
+                </div>
+                <div class="content-block">
+                    <p>The Bitcoin network is the world's largest and most secure computer network. 100% of global Bitcoin node operators are unregulated. As a result, no single government, bank, or corporation can control it.</p>
+                    <p>Furthermore, the network's native token, bitcoin, is entirely permissionless. It is impossible to stop criminals from using it because of the aformentioned decentralized network. While most "bitcoiners" use this native token as an alternative money, due to its limited supply and savings value, many use it for illicit purposes.</p>
+                    <p>We are hard at work highlighting high profile, international cases so the public is aware of the many ways criminals use this network.</p>
+                </div>
+            </div>
+        </section>
 
-    <hr>
+        <section id="criminals">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">CASE STUDIES</span>
+                    <h2 class="section-title">High Profile Bitcoin Criminals</h2>
+                </div>
+                <div class="criminal">
+                    <h3 class="criminal-name">Alexei Navalny</h3>
+                    <ul class="criminal-list">
+                        <li>Exposing corruption among Russian officials - a serious offense that landed him in jail multiple times</li>
+                        <li>Organizing anti-corruption protests and rallies</li>
+                        <li>Creating the Anti-Corruption Foundation (FBK) to investigate and report on graft</li>
+                        <li>Supporting electoral reform and advocating for free and fair elections - a seditious act, apparently</li>
+                        <li>Using social media to mobilize opposition to the Kremlin - a clever tactic, but definitely against the rules</li>
+                    </ul>
+                    <p class="criminal-description">Alexei Navalny's movement received significant bitcoin donations. In 2021, it was reported that his cause received nearly $300,000 worth of bitcoin donations, surpassing the total amount received in 2020. This highlights the use of cryptocurrency as a means to support opposition movements and circumvent traditional financial channels.</p>
+                </div>
+                <div class="criminal">
+                    <h3 class="criminal-name">Roya Mahboob</h3>
+                    <ul class="criminal-list">
+                        <li>Founding the Afghan Citadel Software Company, a pioneering IT firm in Afghanistan - a bold move in a male-dominated industry</li>
+                        <li>Creating the Digital Citizen Fund to promote IT education among Afghan girls and women - a subversive act</li>
+                        <li>Advocating for women's rights and opportunities in Afghanistan</li>
+                        <li>Being a vocal proponent of technology as a tool for social change</li>
+                        <li>Inspiring a new generation of Afghan women to pursue careers in tech - a revolutionary act</li>
+                    </ul>
+                    <p class="criminal-description">Roya Mahboob has discussed cryptocurrency in the context of education and Afghanistan. She has admitted to paying developers in bitcoin specifically so they could custody their own money.</p>
+                </div>
+                <div class="criminal">
+                    <h3 class="criminal-name">Farida Nabourema</h3>
+                    <ul class="criminal-list">
+                        <li>Founding the "Faure Must Go" movement at the age of 20, calling for civil resistance against the dictatorial regime of Faure Gnassingbé in Togo</li>
+                        <li>Organizing and supporting Togolese youths to stand against the authoritarian government</li>
+                        <li>Writing over 300 articles on her blog and other sites, denouncing corruption, dictatorship, and neocolonialism</li>
+                        <li>Being a vocal advocate for democracy and human rights in Togo since her teenage years</li>
+                        <li>Using her writing and activism to promote Pan-Africanism and challenge the status quo</li>
+                    </ul>
+                    <p class="criminal-description">Farida Nabourema is using Bitcoin to liberate herself and others from abusive monetary systems. She has spoken about the potential of Bitcoin to promote financial freedom and challenge authoritarian regimes. As a Pan-African activist, Nabourema sees Bitcoin as a tool for empowerment and a means to challenge the existing financial order.</p>
+                </div>
+                <div class="criminal">
+                    <h3 class="criminal-name">Julian Assange</h3>
+                    <ul class="criminal-list">
+                        <li>Founding WikiLeaks, a platform that exposed secret and classified information</li>
+                        <li>Publishing sensitive documents, such as the Afghan War Diary and the Iraq War Logs, that shed light on the darker aspects of war and human rights abuses</li>
+                        <li>Collaborating with whistleblowers and sources to bring important information to the public - a subversive act</li>
+                        <li>Challenging the authority of governments and institutions by making their secrets public</li>
+                        <li>Being a vocal advocate for transparency and government accountability</li>
+                    </ul>
+                    <p class="criminal-description">Julian Assange and WikiLeaks have accepted Bitcoin donations. In fact, WikiLeaks began accepting Bitcoin in 2011, and it has been a significant source of funding for the organization. The use of Bitcoin allowed WikiLeaks to receive donations from around the world, bypassing traditional financial channels and censorship.</p>
+                </div>
+                <div class="criminal">
+                    <h3 class="criminal-name">Maria Corina Machado</h3>
+                    <ul class="criminal-list">
+                        <li>Being a vocal opponent of the Venezuelan government and its authoritarian tendencies</li>
+                        <li>Advocating for democratic reforms and human rights in Venezuela</li>
+                        <li>Calling for the banning of reelection to political offices in Venezuela</li>
+                        <li>Supporting same-sex marriage and the legalization of medical cannabis in Venezuela</li>
+                        <li>Being a strong advocate for women's rights and empowerment in Venezuela</li>
+                    </ul>
+                    <p class="criminal-description">Maria Corina Machado has actively supported the Human Rights Foundation's call to send bitcoin to Venezuelan citizens who are starving due to hyperinflation.</p>
+                </div>
+                <div class="criminal">
+                    <h3 class="criminal-name">Win Ko Ko Aung</h3>
+                    <ul class="criminal-list">
+                        <li>Being a Burmese activist and advocating for human rights in Myanmar</li>
+                        <li>Pursuing a Master's degree in Data Science for Public Policy at Georgetown University as a McCourt Scholar</li>
+                        <li>Receiving a Human Rights Fellowship from the Bitcoin Policy Institute to contribute to research into the intersection of Bitcoin and human rights</li>
+                        <li>Writing for Bitcoin Magazine and other publications on topics related to Bitcoin, human rights, and Myanmar</li>
+                    </ul>
+                    <p class="criminal-description">Win Ko Ko Aung has been awarded a Human Rights Fellowship by the Bitcoin Policy Institute. He is contributing to the Institute's research into the intersection of Bitcoin and human rights. His work highlights the potential of Bitcoin to promote human rights and freedom, particularly in contexts where traditional financial systems may be restrictive or inaccessible.</p>
+                </div>
+                <div class="criminal">
+                    <h3 class="criminal-name">Edward Snowden</h3>
+                    <ul class="criminal-list">
+                        <li>Whistleblowing on the NSA's mass surveillance programs, revealing the extent of government spying on citizens</li>
+                        <li>Leaking classified documents to the press, including the revelations about PRISM and XKeyscore - a move that challenged the status quo and held those in power accountable</li>
+                        <li>Exposing the complicity of tech companies in government surveillance programs - a significant revelation that raised important questions about the relationship between government and industry</li>
+                        <li>Highlighting the need for greater transparency and accountability in government surveillance practices - a stance that has inspired a new generation of activists and advocates</li>
+                        <li>Being a vocal advocate for privacy and human rights in the digital age</li>
+                    </ul>
+                    <p class="criminal-description">Edward Snowden has been a vocal supporter of Bitcoin and has discussed its potential as a tool for promoting financial privacy and freedom. In a 2020 interview with the New York Times, Snowden praised Bitcoin's decentralized nature and its potential to resist government control. While there is no evidence that Snowden has directly used Bitcoin for personal gain or to fund his activities, his endorsement of the cryptocurrency has contributed to its growing recognition as a tool for promoting financial freedom and privacy.</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="criminals">
-        <div class="container">
-            <h2>High Profile Bitcoin Criminals</h2>
-            <div class="criminal">
-                <h3>Alexei Navalny</h3>
-                <ul>
-                    <li>Exposing corruption among Russian officials - a serious offense that landed him in jail multiple times</li>
-                    <li>Organizing anti-corruption protests and rallies</li>
-                    <li>Creating the Anti-Corruption Foundation (FBK) to investigate and report on graft</li>
-                    <li>Supporting electoral reform and advocating for free and fair elections - a seditious act, apparently</li>
-                    <li>Using social media to mobilize opposition to the Kremlin - a clever tactic, but definitely against the rules</li>
-                </ul>
-                <p>Alexei Navalny's movement received significant bitcoin donations. In 2021, it was reported that his cause received nearly $300,000 worth of bitcoin donations, surpassing the total amount received in 2020. This highlights the use of cryptocurrency as a means to support opposition movements and circumvent traditional financial channels.</p>
+        <section id="countries">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">GLOBAL OVERVIEW</span>
+                    <h2 class="section-title">Countries Where Bitcoin is Illegal</h2>
+                </div>
+                <p class="section-intro">The following is a list of countries in which bitcoin is illegal for any purposes. Interestingly, this list is almost a mirror list of the countries in which bitcoin adoption is growing the fastest. One might look to these nations as the most progressive if bitcoin is genuinely bad for society.</p>
+                <div class="countries-grid">
+                    <div class="country-item">
+                        <h3>China</h3>
+                    </div>
+                    <div class="country-item">
+                        <h3>Afghanistan</h3>
+                    </div>
+                    <div class="country-item">
+                        <h3>Saudi Arabia</h3>
+                    </div>
+                    <div class="country-item">
+                        <h3>Tunisia</h3>
+                    </div>
+                </div>
             </div>
-            <div class="criminal">
-                <h3>Roya Mahboob</h3>
-                <ul>
-                    <li>Founding the Afghan Citadel Software Company, a pioneering IT firm in Afghanistan - a bold move in a male-dominated industry</li>
-                    <li>Creating the Digital Citizen Fund to promote IT education among Afghan girls and women - a subversive act</li>
-                    <li>Advocating for women's rights and opportunities in Afghanistan</li>
-                    <li>Being a vocal proponent of technology as a tool for social change</li>
-                    <li>Inspiring a new generation of Afghan women to pursue careers in tech - a revolutionary act</li>
-                </ul>
-                <p>Roya Mahboob has discussed cryptocurrency in the context of education and Afghanistan. She has admitted to paying developers in bitcoin specifically so they could custody their own money.</p>
-            </div>
-            <div class="criminal">
-                <h3>Farida Nabourema</h3>
-                <ul>
-                    <li>Founding the "Faure Must Go" movement at the age of 20, calling for civil resistance against the dictatorial regime of Faure Gnassingbé in Togo</li>
-                    <li>Organizing and supporting Togolese youths to stand against the authoritarian government</li>
-                    <li>Writing over 300 articles on her blog and other sites, denouncing corruption, dictatorship, and neocolonialism</li>
-                    <li>Being a vocal advocate for democracy and human rights in Togo since her teenage years</li>
-                    <li>Using her writing and activism to promote Pan-Africanism and challenge the status quo</li>
-                </ul>
-                <p>Farida Nabourema is using Bitcoin to liberate herself and others from abusive monetary systems. She has spoken about the potential of Bitcoin to promote financial freedom and challenge authoritarian regimes. As a Pan-African activist, Nabourema sees Bitcoin as a tool for empowerment and a means to challenge the existing financial order.</p>
-            </div>
-            <div class="criminal">
-                <h3>Julian Assange</h3>
-                <ul>
-                    <li>Founding WikiLeaks, a platform that exposed secret and classified information</li>
-                    <li>Publishing sensitive documents, such as the Afghan War Diary and the Iraq War Logs, that shed light on the darker aspects of war and human rights abuses</li>
-                    <li>Collaborating with whistleblowers and sources to bring important information to the public - a subversive act</li>
-                    <li>Challenging the authority of governments and institutions by making their secrets public</li>
-                    <li>Being a vocal advocate for transparency and government accountability</li>
-                </ul>
-                <p>Julian Assange and WikiLeaks have accepted Bitcoin donations. In fact, WikiLeaks began accepting Bitcoin in 2011, and it has been a significant source of funding for the organization. The use of Bitcoin allowed WikiLeaks to receive donations from around the world, bypassing traditional financial channels and censorship.</p>
-            </div>
-            <div class="criminal">
-                <h3>Maria Corina Machado</h3>
-                <ul>
-                    <li>Being a vocal opponent of the Venezuelan government and its authoritarian tendencies</li>
-                    <li>Advocating for democratic reforms and human rights in Venezuela</li>
-                    <li>Calling for the banning of reelection to political offices in Venezuela</li>
-                    <li>Supporting same-sex marriage and the legalization of medical cannabis in Venezuela</li>
-                    <li>Being a strong advocate for women's rights and empowerment in Venezuela</li>
-                </ul>
-                <p>Maria Corina Machado has actively supported the Human Rights Foundation's call to send bitcoin to Venezuelan citizens who are starving due to hyperinflation.</p>
-            </div>
-            <div class="criminal">
-                <h3>Win Ko Ko Aung</h3>
-                <ul>
-                    <li>Being a Burmese activist and advocating for human rights in Myanmar</li>
-                    <li>Pursuing a Master's degree in Data Science for Public Policy at Georgetown University as a McCourt Scholar</li>
-                    <li>Receiving a Human Rights Fellowship from the Bitcoin Policy Institute to contribute to research into the intersection of Bitcoin and human rights</li>
-                    <li>Writing for Bitcoin Magazine and other publications on topics related to Bitcoin, human rights, and Myanmar</li>
-                </ul>
-                <p>Win Ko Ko Aung has been awarded a Human Rights Fellowship by the Bitcoin Policy Institute. He is contributing to the Institute's research into the intersection of Bitcoin and human rights. His work highlights the potential of Bitcoin to promote human rights and freedom, particularly in contexts where traditional financial systems may be restrictive or inaccessible.</p>
-            </div>
-            <div class="criminal">
-                <h3>Edward Snowden</h3>
-                <ul>
-                    <li>Whistleblowing on the NSA's mass surveillance programs, revealing the extent of government spying on citizens</li>
-                    <li>Leaking classified documents to the press, including the revelations about PRISM and XKeyscore - a move that challenged the status quo and held those in power accountable</li>
-                    <li>Exposing the complicity of tech companies in government surveillance programs - a significant revelation that raised important questions about the relationship between government and industry</li>
-                    <li>Highlighting the need for greater transparency and accountability in government surveillance practices - a stance that has inspired a new generation of activists and advocates</li>
-                    <li>Being a vocal advocate for privacy and human rights in the digital age</li>
-                </ul>
-                <p>Edward Snowden has been a vocal supporter of Bitcoin and has discussed its potential as a tool for promoting financial privacy and freedom. In a 2020 interview with the New York Times, Snowden praised Bitcoin's decentralized nature and its potential to resist government control. While there is no evidence that Snowden has directly used Bitcoin for personal gain or to fund his activities, his endorsement of the cryptocurrency has contributed to its growing recognition as a tool for promoting financial freedom and privacy.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <hr>
+        <section id="history">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">RESISTANCE MONEY</span>
+                    <h2 class="section-title">Historical Figures</h2>
+                </div>
+                <p class="section-intro">The following is a list of criminals, some with HUGE rapsheets, that likely would have used bitcoin to avoid the financial system of their day.</p>
+                <div class="history-grid">
+                    <article class="history-item">
+                        <h3>Martin Luther King Jr.</h3>
+                        <p>King was jailed multiple times for his illicit activity promoting racial equality. It is easy to imagine this criminal using bitcoin to circumvent the traditional financial system in a manner similar to Navalny or Machado.</p>
+                    </article>
+                    <article class="history-item">
+                        <h3>Nelson Mandela</h3>
+                        <p>Mandela spent years in jail for opposing segregation. The townships that he was advocating for are now among the largest adopters of bitcoin as a payment method in the whole world.</p>
+                    </article>
+                    <article class="history-item">
+                        <h3>Aung San Suu Kyi</h3>
+                        <p>Criminal and Nobel Peace Prize winner Aung San Suu Kyi is still alive, but serving out her life sentence for crimes against the Junta in Burma. She would, no doubt, be glad to know about the ways criminals have been using bitcoin to subvert the Junta in her country.</p>
+                    </article>
+                    <article class="history-item">
+                        <h3>Oskar Schindler</h3>
+                        <p>Oskar Schindler illegally smuggled many people out areas where they would have been sent to Nazi death camps. Had bitcoin been around, he clearly would have illegally helped them preserve their life savings as well, like many of the contemporary criminals listed on this site do.</p>
+                    </article>
+                    <article class="history-item">
+                        <h3>Harriet Tubman</h3>
+                        <p>If you've ever studied anything about American history, this one is basically a "duh" situation.</p>
+                    </article>
+                    <article class="history-item">
+                        <h3>Mahatma Gandhi</h3>
+                        <p>Gandhi was imprisoned multiple times for seditious civil disobedience against British colonial rule. This criminal would have used bitcoin to receive international funding for his independence movement while evading British financial surveillance.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <section id="countries">
-        <div class="container">
-            <h2>Countries Where Bitcoin is Illegal</h2>
-            <p>The following is a list of countries in which bitcoin is illegal for any purposes. Interestingly, this list is almost a mirror list of the countries in which bitcoin adoption is growing the fastest. One might look to these nations as the most progressive if bitcoin is genuinely bad for society.</p>
-            <div class="countries-item">
-                <h3>China</h3>
+        <section id="contact" class="cta-section">
+            <div class="container">
+                <div class="cta-wrapper">
+                    <span class="cta-tag">TAKE ACTION</span>
+                    <a href="https://coinos.io/" target="_blank" rel="noopener noreferrer" class="cta-button">Get Involved</a>
+                </div>
             </div>
-            <div class="countries-item">
-                <h3>Afghanistan</h3>
-            </div>
-            <div class="countries-item">
-                <h3>Saudi Arabia</h3>
-            </div>
-            <div class="countries-item">
-                <h3>Tunisia</h3>
-            </div>
-        </div>
-    </section>
-
-    <hr>
-
-    <section id="history">
-        <div class="container">
-            <h2>Historical Figures and Resistance Money</h2>
-            <p>The following is a list of criminals, some with HUGE rapsheets, that likely would have used bitcoin to avoid the financial system of their day.</p>
-            <div class="history-item">
-                <h3>Martin Luther King Jr.</h3>
-                <p>King was jailed multiple times for his illicit activity promoting racial equality. It is easy to imagine this criminal using bitcoin to circumvent the traditional financial system in a manner similar to Navalny or Machado.</p>
-            </div>
-            <div class="history-item">
-                <h3>Nelson Mandela</h3>
-                <p>Mandela spent years in jail for opposing segregation. The townships that he was advocating for are now among the largest adopters of bitcoin as a payment method in the whole world.</p>
-            </div>
-            <div class="history-item">
-                <h3>Aung San Suu Kyi</h3>
-                <p>Criminal and Nobel Peace Prize winner Aung San Suu Kyi is still alive, but serving out her life sentence for crimes against the Junta in Burma. She would, no doubt, be glad to know about the ways criminals have been using bitcoin to subvert the Junta in her country.</p>
-            </div>
-            <div class="history-item">
-                <h3>Oskar Schindler</h3>
-                <p>Oskar Schindler illegally smuggled many people out areas where they would have been sent to Nazi death camps. Had bitcoin been around, he clearly would have illegally helped them preserve their life savings as well, like many of the contemporary criminals listed on this site do.</p>
-            </div>
-            <div class="history-item">
-                <h3>Harriet Tubman</h3>
-                <p>If you've ever studied anything about American history, this one is basically a "duh" situation.</p>
-            </div>
-        </div>
-    </section>
-
-    <hr>
-
-    <a id="contact" href="https://coinos.io/" target="_blank" class="cta-button">Get Involved</a>
+        </section>
+    </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Bitcoin is for <a class="me" href="https://stacker.news/jasonb" target="_blank"> Criminals</a>. All rights reserved.</p>
+        <div class="footer-inner">
+            <div class="footer-content">
+                <nav class="footer-nav">
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Navigate</h4>
+                        <ul class="footer-links">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#criminals">Criminals</a></li>
+                            <li><a href="#countries">Countries</a></li>
+                            <li><a href="#history">History</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-colophon">
+                <div class="footer-disclaimer">
+                    AUTHORIZED BY BITCOIN IS FOR CRIMINALS
+                </div>
+                <p class="footer-copyright">&copy; 2025 Bitcoin is for <a class="footer-link" href="https://stacker.news/jasonb" target="_blank" rel="noopener noreferrer">Criminals</a>. All rights reserved.</p>
+            </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const mainNav = document.querySelector('.main-nav');
+            const navLinks = document.querySelectorAll('.nav-list a');
+            
+            menuToggle.addEventListener('click', function() {
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', !isExpanded);
+                mainNav.classList.toggle('active');
+                this.classList.toggle('active');
+                document.body.classList.toggle('menu-open');
+            });
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth <= 1023) {
+                        menuToggle.setAttribute('aria-expanded', 'false');
+                        mainNav.classList.remove('active');
+                        menuToggle.classList.remove('active');
+                        document.body.classList.remove('menu-open');
+                    }
+                });
+            });
+            
+            document.addEventListener('scroll', function() {
+                const header = document.querySelector('header');
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
