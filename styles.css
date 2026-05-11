@@ -363,6 +363,9 @@ section:nth-child(even) {
 .criminal:nth-child(5) { animation-delay: 0.5s; }
 .criminal:nth-child(6) { animation-delay: 0.6s; }
 .criminal:nth-child(7) { animation-delay: 0.7s; }
+.criminal:nth-child(8) { animation-delay: 0.8s; }
+.criminal:nth-child(9) { animation-delay: 0.9s; }
+.criminal:nth-child(10) { animation-delay: 1.0s; }
 
 .criminal:last-child {
     border-bottom: none;
