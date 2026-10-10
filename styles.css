@@ -509,7 +509,8 @@ section:nth-child(even) {
     color: #B8B8C0;
 }
 
-.support-link {
+.support-link,
+.case-link {
     display: inline-block;
     margin-top: 15px;
     font-family: 'Ringside Compressed', 'Ringside Compressed A', 'Ringside Compressed B', sans-serif;
@@ -521,7 +522,14 @@ section:nth-child(even) {
     color: #B7E4CF;
 }
 
-.support-link:hover {
+.case-link {
+    margin-top: 20px;
+    margin-left: 23px;
+    line-height: 1.3;
+}
+
+.support-link:hover,
+.case-link:hover {
     color: #FFFFFF;
 }
 
@@ -896,7 +904,9 @@ footer {
     
     .footer-heading,
     .footer-links li a,
-    .footer-link {
+    .footer-link,
+    .support-link,
+    .case-link {
         color: #000000;
     }
 }
