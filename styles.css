@@ -472,17 +472,26 @@ section:nth-child(even) {
     gap: 35px;
 }
 
-.history-item {
+.support-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+.history-item,
+.support-item {
     border-left: 4px solid #B7E4CF;
     padding-left: 30px;
     transition: border-color 0.3s ease;
 }
 
-.history-item:hover {
+.history-item:hover,
+.support-item:hover {
     border-color: #7B8FB5;
 }
 
-.history-item h3 {
+.history-item h3,
+.support-item h3 {
     font-family: 'Ringside Extra Wide', 'Ringside Extra Wide SSm A', sans-serif;
     font-weight: 800;
     font-size: 20px;
@@ -492,10 +501,27 @@ section:nth-child(even) {
     margin-bottom: 15px;
 }
 
-.history-item p {
+.history-item p,
+.support-item p {
     font-size: 16px;
     line-height: 1.7;
     color: #B8B8C0;
+}
+
+.support-link {
+    display: inline-block;
+    margin-top: 15px;
+    font-family: 'Ringside Compressed', 'Ringside Compressed A', 'Ringside Compressed B', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #B7E4CF;
+}
+
+.support-link:hover {
+    color: #FFFFFF;
 }
 
 .cta-section {
@@ -769,7 +795,8 @@ footer {
         font-size: 16px;
     }
     
-    .history-grid {
+    .history-grid,
+    .support-grid {
         grid-template-columns: 1fr;
         gap: 30px;
     }
@@ -846,14 +873,16 @@ footer {
     .section-title,
     .criminal-name,
     .history-item h3,
+    .support-item h3,
     .country-item h3 {
         color: #000000;
     }
-    
+
     .section-intro,
     .content-block p,
     .criminal-description,
-    .history-item p {
+    .history-item p,
+    .support-item p {
         color: #333333;
     }
     
