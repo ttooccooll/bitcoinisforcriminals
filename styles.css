@@ -489,6 +489,12 @@ section:nth-child(even) {
     gap: 35px;
 }
 
+@media (min-width: 769px) {
+    .history-syndicates .history-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 .support-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -508,6 +514,7 @@ section:nth-child(even) {
 }
 
 .history-item h3,
+.history-item h4,
 .support-item h3 {
     font-family: 'Ringside Extra Wide', 'Archivo', sans-serif;
     font-stretch: 125%;
@@ -649,7 +656,8 @@ section:nth-child(even) {
     transform-origin: left center;
 }
 
-.warning-signs {
+.warning-signs,
+.history-syndicates {
     margin-top: 100px;
     scroll-margin-top: calc(var(--header-height) + 40px);
 }
@@ -1141,7 +1149,8 @@ footer {
         letter-spacing: 4px;
     }
     
-    .warning-signs {
+    .warning-signs,
+    .history-syndicates {
         margin-top: 70px;
     }
 
@@ -1233,6 +1242,7 @@ footer {
     .section-title,
     .criminal-name,
     .history-item h3,
+    .history-item h4,
     .support-item h3,
     .country-item h3 {
         color: #000000;
