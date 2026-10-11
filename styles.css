@@ -802,6 +802,58 @@ section:nth-child(even) {
     text-underline-offset: 3px;
 }
 
+.threat-share {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 20px;
+    margin-top: 28px;
+    animation: threat-share-in 0.4s ease;
+}
+
+.threat-share[hidden] {
+    display: none;
+}
+
+@keyframes threat-share-in {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+}
+
+.threat-share-button {
+    font-family: 'Ringside Compressed', 'Archivo', sans-serif;
+    font-stretch: 75%;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #B7E4CF;
+    background: transparent;
+    border: 2px solid #B7E4CF;
+    padding: 14px 28px 13px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.threat-share-button:hover {
+    background: #B7E4CF;
+    color: #0D1220;
+}
+
+.threat-share-button:focus-visible {
+    outline: 2px solid #B7E4CF;
+    outline-offset: 3px;
+}
+
+.threat-share-status {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #B7E4CF;
+}
+
 .cta-section {
     background: #0D1220;
     padding: 100px 50px;
@@ -1170,6 +1222,11 @@ footer {
         padding: 12px 16px 11px;
         text-align: left;
     }
+
+    .threat-share-button {
+        width: 100%;
+        padding: 14px 16px 13px;
+    }
     
     footer {
         padding: 60px 20px 30px;
@@ -1269,7 +1326,8 @@ footer {
         color: #000000;
     }
     
-    .evidence {
+    .evidence,
+    .threat-share {
         display: none;
     }
 }
