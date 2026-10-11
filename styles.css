@@ -551,6 +551,75 @@ section:nth-child(even) {
     color: #FFFFFF;
 }
 
+.evidence {
+    margin: 16px 0 0 23px;
+}
+
+.evidence summary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    list-style: none;
+    font-family: 'Ringside Compressed', 'Archivo', sans-serif;
+    font-stretch: 75%;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #7B8FB5;
+    transition: color 0.2s ease;
+}
+
+.evidence summary::-webkit-details-marker {
+    display: none;
+}
+
+.evidence summary::before {
+    content: '+';
+    display: inline-block;
+    width: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.evidence[open] summary::before {
+    content: '\2212';
+}
+
+.evidence summary:hover {
+    color: #B7E4CF;
+}
+
+.evidence summary:focus-visible {
+    outline: 2px solid #B7E4CF;
+    outline-offset: 3px;
+}
+
+.evidence-list {
+    list-style: none;
+    margin-top: 14px;
+    padding-left: 20px;
+    border-left: 1px solid #2A3550;
+}
+
+.evidence-list li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.evidence-list li:last-child {
+    margin-bottom: 0;
+}
+
+.evidence-list a {
+    text-decoration: underline;
+    text-decoration-color: rgba(139, 157, 195, 0.4);
+    text-underline-offset: 3px;
+}
+
 .cta-section {
     background: #0D1220;
     padding: 100px 50px;
@@ -936,6 +1005,10 @@ footer {
     .support-link,
     .case-link {
         color: #000000;
+    }
+    
+    .evidence {
+        display: none;
     }
 }
 
