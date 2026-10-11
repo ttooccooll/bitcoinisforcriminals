@@ -1,0 +1,38 @@
+name: Report a bitcoin criminal
+description: Suggest a public figure or organization for a new case file.
+title: "Tip"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your vigilance.
+
+        Tips are public. Please report only public figures or organizations, and share only information that is already public. Do not report anyone who could be put in danger by appearing on this site.
+  - type: input
+    id: suspect
+    attributes:
+      label: Name of the suspect
+      description: A person or an organization.
+    validations:
+      required: true
+  - type: textarea
+    id: crimes
+    attributes:
+      label: Their crimes
+      description: What did they do, and where does bitcoin come in?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Links to news reports, court records, or the suspect's own words.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Before you submit
+      options:
+        - label: Everything here is already public, and naming this person on the site will not put them in danger.
+          required: true
