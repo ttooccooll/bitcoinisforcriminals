@@ -6,6 +6,15 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Archivo';
+    src: url('fonts/archivo-latin.woff2') format('woff2');
+    font-weight: 100 900;
+    font-stretch: 62% 125%;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --header-height: 68px;
 }
@@ -81,7 +90,8 @@ header.scrolled {
 }
 
 .logo {
-    font-family: 'Ringside Extra Wide', 'Ringside Extra Wide SSm A', 'Ringside Extra Wide SSm B', sans-serif;
+    font-family: 'Ringside Extra Wide', 'Archivo', sans-serif;
+    font-stretch: 125%;
     font-weight: 800;
     font-size: 13px;
     line-height: 1;
@@ -110,9 +120,10 @@ header.scrolled {
 }
 
 .nav-list li a {
-    font-family: 'Ringside Compressed', 'Ringside Compressed A', 'Ringside Compressed B', sans-serif;
+    font-family: 'Ringside Compressed', 'Archivo', sans-serif;
+    font-stretch: 75%;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -239,7 +250,8 @@ main {
 }
 
 .hero-title {
-    font-family: 'Ringside Extra Wide', 'Ringside Extra Wide SSm A', sans-serif;
+    font-family: 'Ringside Extra Wide', 'Archivo', sans-serif;
+    font-stretch: 125%;
     font-weight: 800;
     font-size: 80px;
     line-height: 1;
@@ -273,7 +285,8 @@ main {
 }
 
 .hero-warning {
-    font-family: 'Ringside Extra Wide', sans-serif;
+    font-family: 'Ringside Extra Wide', 'Archivo', sans-serif;
+    font-stretch: 125%;
     font-weight: 800;
     font-size: 18px;
     letter-spacing: 3px;
@@ -307,7 +320,8 @@ section:nth-child(even) {
 
 .section-tag {
     display: block;
-    font-family: 'Ringside Extra Wide', sans-serif;
+    font-family: 'Ringside Extra Wide', 'Archivo', sans-serif;
+    font-stretch: 125%;
     font-weight: 800;
     font-size: 11px;
     letter-spacing: 2px;
@@ -317,7 +331,8 @@ section:nth-child(even) {
 }
 
 .section-title {
-    font-family: 'Ringside Extra Wide', 'Ringside Extra Wide SSm A', sans-serif;
+    font-family: 'Ringside Extra Wide', 'Archivo', sans-serif;
+    font-stretch: 125%;
     font-weight: 800;
     font-size: 40px;
     line-height: 1.1;
@@ -365,7 +380,8 @@ section:nth-child(even) {
 }
 
 .criminal-name {
-    font-family: 'Ringside Extra Wide', 'Ringside Extra Wide SSm A', sans-serif;
+    font-family: 'Ringside Extra Wide', 'Archivo', sans-serif;
+    font-stretch: 125%;
     font-weight: 800;
     font-size: 28px;
     color: #E8E8EC;
@@ -380,8 +396,7 @@ section:nth-child(even) {
     content: '';
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: calc(0.835em - 5px);
     width: 10px;
     height: 10px;
     background: #BC1126;
@@ -448,7 +463,8 @@ section:nth-child(even) {
 }
 
 .country-item h3 {
-    font-family: 'Ringside Extra Wide', 'Ringside Extra Wide SSm A', sans-serif;
+    font-family: 'Ringside Extra Wide', 'Archivo', sans-serif;
+    font-stretch: 112.5%;
     font-weight: 800;
     font-size: 20px;
     color: #E8E8EC;
@@ -493,7 +509,8 @@ section:nth-child(even) {
 
 .history-item h3,
 .support-item h3 {
-    font-family: 'Ringside Extra Wide', 'Ringside Extra Wide SSm A', sans-serif;
+    font-family: 'Ringside Extra Wide', 'Archivo', sans-serif;
+    font-stretch: 125%;
     font-weight: 800;
     font-size: 20px;
     color: #E8E8EC;
@@ -513,7 +530,8 @@ section:nth-child(even) {
 .case-link {
     display: inline-block;
     margin-top: 15px;
-    font-family: 'Ringside Compressed', 'Ringside Compressed A', 'Ringside Compressed B', sans-serif;
+    font-family: 'Ringside Compressed', 'Archivo', sans-serif;
+    font-stretch: 75%;
     font-weight: 700;
     font-size: 18px;
     line-height: 1;
@@ -559,7 +577,8 @@ section:nth-child(even) {
 
 .cta-tag {
     display: block;
-    font-family: 'Ringside Extra Wide', sans-serif;
+    font-family: 'Ringside Extra Wide', 'Archivo', sans-serif;
+    font-stretch: 125%;
     font-weight: 800;
     font-size: 12px;
     letter-spacing: 2px;
@@ -570,7 +589,8 @@ section:nth-child(even) {
 
 .cta-button {
     display: inline-block;
-    font-family: 'Ringside Compressed', 'Ringside Compressed A', 'Ringside Compressed B', sans-serif;
+    font-family: 'Ringside Compressed', 'Archivo', sans-serif;
+    font-stretch: 75%;
     font-weight: 700;
     font-size: 26px;
     line-height: 1;
@@ -602,7 +622,8 @@ footer {
 }
 
 .footer-heading {
-    font-family: 'Ringside Extra Wide', sans-serif;
+    font-family: 'Ringside Extra Wide', 'Archivo', sans-serif;
+    font-stretch: 125%;
     font-weight: 800;
     font-size: 12px;
     letter-spacing: 2px;
@@ -620,7 +641,8 @@ footer {
 }
 
 .footer-links li a {
-    font-family: 'Ringside Compressed', sans-serif;
+    font-family: 'Ringside Compressed', 'Archivo', sans-serif;
+    font-stretch: 75%;
     font-weight: 700;
     font-size: 18px;
     line-height: 1;
@@ -643,7 +665,7 @@ footer {
 }
 
 .footer-disclaimer {
-    font-family: 'Ringside Regular', sans-serif;
+    font-family: 'Ringside Regular', 'Archivo', sans-serif;
     font-weight: 400;
     font-size: 10px;
     letter-spacing: 1.5px;
@@ -694,6 +716,12 @@ footer {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media (max-width: 1199px) {
+    .country-item h3 {
+        font-size: 16px;
     }
 }
 
