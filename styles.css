@@ -462,7 +462,7 @@ section:nth-child(even) {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-.country-item h3 {
+.country-item h4 {
     font-family: 'Ringside Extra Wide', 'Archivo', sans-serif;
     font-stretch: 112.5%;
     font-weight: 800;
@@ -470,6 +470,31 @@ section:nth-child(even) {
     color: #E8E8EC;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+.ban-group + .ban-group {
+    margin-top: 80px;
+}
+
+.ban-group-title {
+    font-family: 'Ringside Extra Wide', 'Archivo', sans-serif;
+    font-stretch: 125%;
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #2A3550;
+    margin-bottom: 20px;
+    text-wrap: balance;
+}
+
+.ban-group-intro {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #C8C8D0;
+    margin-bottom: 40px;
 }
 
 .country-item::before {
@@ -1059,7 +1084,7 @@ footer {
 }
 
 @media (max-width: 1199px) {
-    .country-item h3 {
+    .country-item h4 {
         font-size: 16px;
     }
 }
@@ -1164,12 +1189,21 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
+
+    .ban-group + .ban-group {
+        margin-top: 60px;
+    }
+
+    .ban-group-title {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
     
     .country-item {
         padding: 30px 20px;
     }
     
-    .country-item h3 {
+    .country-item h4 {
         font-size: 16px;
     }
     
@@ -1301,11 +1335,13 @@ footer {
     .history-item h3,
     .history-item h4,
     .support-item h3,
-    .country-item h3 {
+    .ban-group-title,
+    .country-item h4 {
         color: #000000;
     }
 
     .section-intro,
+    .ban-group-intro,
     .content-block p,
     .criminal-description,
     .history-item p,
