@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitcoin is for Criminals</title>
+    <title>Bitcoin is for Criminals | A Satirical Public Warning</title>
     <link rel="preload" href="fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="styles.css">
     <link rel="canonical" href="https://bitcoinisforcriminals.com/">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23182658' width='100' height='100'/><text y='.9em' x='50%' text-anchor='middle' font-size='80' fill='white'>₿</text></svg>">
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <meta name="theme-color" content="#182658">
     <meta name="description" content="A satirical public warning about the activists, dissidents, and journalists who use bitcoin to resist authoritarian governments.">
@@ -23,15 +24,41 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Bitcoin is for Criminals">
     <meta name="twitter:description" content="A satirical public warning about the activists, dissidents, and journalists who use bitcoin to resist authoritarian governments.">
+    <meta name="twitter:image" content="https://bitcoinisforcriminals.com/og-image.png">
+    <meta name="twitter:image:alt" content="Public warning. Real-life case studies of the ways criminals have used bitcoin across the globe. Proceed with caution.">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebSite",
+                "@id": "https://bitcoinisforcriminals.com/#website",
+                "name": "Bitcoin is for Criminals",
+                "url": "https://bitcoinisforcriminals.com/"
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://bitcoinisforcriminals.com/#webpage",
+                "url": "https://bitcoinisforcriminals.com/",
+                "name": "Bitcoin is for Criminals",
+                "description": "A satirical public warning about the activists, dissidents, and journalists who use bitcoin to resist authoritarian governments.",
+                "genre": "Satire",
+                "inLanguage": "en",
+                "isPartOf": { "@id": "https://bitcoinisforcriminals.com/#website" }
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <header>
         <div class="header-inner">
             <a href="#" class="logo">BITCOIN IS FOR CRIMINALS</a>
-            <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
                 <span class="hamburger"></span>
             </button>
-            <nav class="main-nav">
+            <nav class="main-nav" id="main-nav" aria-label="Main">
                 <ul class="nav-list">
                     <li><a href="#criminals">Criminals</a></li>
                     <li><a href="#syndicates">Syndicates</a></li>
@@ -43,11 +70,11 @@
         </div>
     </header>
 
-    <main>
+    <main id="main" tabindex="-1">
         <section id="hero">
             <div class="hero-overlay"></div>
             <div class="container">
-                <h1 class="hero-title">PUBLIC WARNING</h1>
+                <h1 class="hero-title"><span class="visually-hidden">Bitcoin is for Criminals. </span>PUBLIC WARNING</h1>
                 <hr class="hero-divider">
                 <p class="hero-text">The following case studies are real-life examples of the ways criminals have used bitcoin across the globe.</p>
                 <p class="hero-text">As a warning, you may find some of the illicit activity described below alarming.</p>
@@ -676,9 +703,9 @@
     <footer>
         <div class="footer-inner">
             <div class="footer-content">
-                <nav class="footer-nav">
+                <nav class="footer-nav" aria-label="Footer">
                     <div class="footer-col">
-                        <h4 class="footer-heading">Navigate</h4>
+                        <h2 class="footer-heading">Navigate</h2>
                         <ul class="footer-links">
                             <li><a href="#about">About</a></li>
                             <li><a href="#criminals">Criminals</a></li>
@@ -706,27 +733,34 @@
         document.addEventListener('DOMContentLoaded', function() {
             const menuToggle = document.querySelector('.mobile-menu-toggle');
             const mainNav = document.querySelector('.main-nav');
-            const navLinks = document.querySelectorAll('.nav-list a');
-            
+            const closers = document.querySelectorAll('.nav-list a, .logo');
+            const desktop = window.matchMedia('(min-width: 1024px)');
+            const setMenu = function(open) {
+                menuToggle.setAttribute('aria-expanded', open);
+                menuToggle.classList.toggle('active', open);
+                mainNav.classList.toggle('active', open);
+                document.body.classList.toggle('menu-open', open);
+            };
+
             menuToggle.addEventListener('click', function() {
-                const isExpanded = this.getAttribute('aria-expanded') === 'true';
-                this.setAttribute('aria-expanded', !isExpanded);
-                mainNav.classList.toggle('active');
-                this.classList.toggle('active');
-                document.body.classList.toggle('menu-open');
+                setMenu(this.getAttribute('aria-expanded') !== 'true');
             });
-            
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    if (window.innerWidth <= 1023) {
-                        menuToggle.setAttribute('aria-expanded', 'false');
-                        mainNav.classList.remove('active');
-                        menuToggle.classList.remove('active');
-                        document.body.classList.remove('menu-open');
-                    }
-                });
+
+            closers.forEach(link => link.addEventListener('click', () => setMenu(false)));
+
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape' && mainNav.classList.contains('active')) {
+                    setMenu(false);
+                    menuToggle.focus();
+                }
             });
-            
+
+            desktop.addEventListener('change', function() {
+                if (desktop.matches) {
+                    setMenu(false);
+                }
+            });
+
             const signs = document.querySelectorAll('.signs-list input');
             const threat = document.querySelector('.threat');
             if (signs.length && threat) {
